@@ -15,6 +15,7 @@
             <th style="width: 200px;">Address</th>
             <th>City</th>
             <th style="width: 120px">Telephone</th>
+            <th>Email</th>
             <th>Pets</th>
         </tr>
         </thead>
@@ -35,6 +36,9 @@
                 </td>
                 <td>
                     <c:out value="${owner.telephone}"/>
+                </td>
+                <td>
+                    <c:out value="${owner.email}"/>
                 </td>
                 <td>
                     <c:forEach var="pet" items="${owner.pets}">
